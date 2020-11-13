@@ -1,5 +1,5 @@
 
-package com.example.map_direction.model;
+package com.example.map_direction.gson;
 
 import java.util.List;
 import com.google.gson.annotations.Expose;

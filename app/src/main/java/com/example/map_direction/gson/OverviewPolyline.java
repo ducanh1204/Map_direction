@@ -1,10 +1,10 @@
 
-package com.example.map_direction.model;
+package com.example.map_direction.gson;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Polyline {
+public class OverviewPolyline {
 
     @SerializedName("points")
     @Expose

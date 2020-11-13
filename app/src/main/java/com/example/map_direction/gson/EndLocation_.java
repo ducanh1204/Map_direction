@@ -1,10 +1,10 @@
 
-package com.example.map_direction.model;
+package com.example.map_direction.gson;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Northeast {
+public class EndLocation_ {
 
     @SerializedName("lat")
     @Expose
