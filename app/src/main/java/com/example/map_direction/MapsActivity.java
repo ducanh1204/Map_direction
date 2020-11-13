@@ -130,16 +130,16 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         colorsList.add(new Colors(Color.MAGENTA));
     }
 
-    // Thêm location gợi ý đường đi, nếu không thêm gợi ý, add để trống
+    // Thêm location gợi ý đường đi, nếu không cần thêm gợi ý phải add list trống giống cái add thứ 2
     private void addLocationHhint() {
         waypointList = new ArrayList<>();
         waypointList.add(new LocationInformation(Arrays.asList(new String[]{"21.062502,105.797996", "21.046352,105.805313"})));
 
-        // địa điểm nào không cần thêm vị trí gợi ý, để trống
+        // địa điểm nào không cần thêm vị trí gợi ý phải add list trống giống cái dưới này
         waypointList.add(new LocationInformation(Arrays.asList(new String[]{})));
     }
 
-    // Thêm location
+    // Thêm location, có thể thêm nhiều địa điểm, đường đi tự động từ 1->2, 2->3...điểm cuối cùng đến điểm 0
     private void addLocation() {
         locationList = new ArrayList<>();
         locationList.add(new LocationInformation(21.070120, 105.786339, "Location 1"));
